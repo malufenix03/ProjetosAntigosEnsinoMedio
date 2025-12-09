@@ -1,0 +1,234 @@
+/* GRADIENTE DO FUNDO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    min-height: 650px;
+    color: #fff;
+    /*background: linear-gradient(-45deg, #FC007A, #a70e90, #4682b4, #00E5FF);*/
+    background: linear-gradient(-45deg,#a0d9e7 0, #a3d8eb 5.56%, #a6d7ee 11.11%, #aad6f1 16.67%, #afd5f2 22.22%, #b4d3f4 27.78%, #bad2f4 33.33%, #c0d0f4 38.89%, #c7cff3 44.44%, #cdcdf2 50%, #d3cbf0 55.56%, #d9caed 61.11%, #dfc8ea 66.67%, #e4c7e6 72.22%, #e9c6e2 77.78%, #edc5dd 83.33%, #f1c4d9 88.89%, #f3c3d4 94.44%, #f5c3cf 100%);
+    background-size: 175% 175%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }    
+}
+
+/* CONFIGURAÇÃO DO HEADER */
+div.header {
+    background-color: white;
+    width: 1200px;
+    height: 90px;
+    font-family: arial;
+    z-index: 9;
+    padding-top: 7px;
+    position: absolute;
+    font-size: 20px;
+    font-style: bold;
+}
+
+a.a_header:link, a.a_header:visited {
+    text-decoration: none;
+    color: #661c99;
+    font-size: 20px;
+    font-style: bold;
+}
+
+a.a_header:hover {
+    text-decoration: none;
+    color: #fc81b2;
+    font-size: 20px;
+    font-style:bold;
+}
+
+div.logo {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 20%
+    padding: 5px;
+    padding-right: 50px;
+}
+
+#header_logo {
+    height: 70px;
+    opacity: 1;
+}
+
+#header_logo:hover {
+    opacity: 0.7;
+}
+
+div.links {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    width: 40%;
+}
+
+div.busca{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 30%;
+    border:solid 1.5px;
+    border-color: #c994d6;
+    border-radius:15px;
+    width:220px;
+    padding-bottom:3px;
+    margin: 12px;
+}
+
+div.header_carrinho {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 6%;
+}
+
+#txtbusca{
+    padding-left:5px;
+    font-family: arial;
+    font-style:italic;
+    font-size:12px;
+    border:none;
+    height:25px;
+    width:160px;
+}
+
+#btnbusca {
+    margin-top: 2px;
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+#img_carrinho {
+    width: 25px;
+    height: auto;
+}
+
+/* CONFIGURAÇÃO GERAL */
+
+div.div_principal {
+    background-color: #d9c8e3;
+    width: 1200px;
+    min-height: 650px;
+    font-family: arial;
+    align-content: center;
+    vertical-align: middle;
+    display: table;
+}
+
+h4 {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+hr {
+    color: white;
+    border-color: white;
+    outline-color: white;
+}
+
+img {
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+/*LOGIN*/
+
+
+#login {
+    width:100%;
+    background-color: transparent;
+    position: absolute;
+    align-content: center;
+    height: 250px;
+    font-family: arial;
+    text-align: justify;
+    font-size: 20px;
+    color: #300b59;
+    top:50%;
+    margin-top: -200px;
+    line-height: 30px;
+}
+
+input.btn{
+    height: 30px;
+    width: 110px;
+    color:#300b59;
+    border: 2px solid #8b78ad;
+    background-color:transparent;
+}
+
+a.cadastro:link, a.cadastro:visited {
+    text-decoration: none;
+    color: #661c99;
+    font-size: 20px;
+}
+
+a.cadastro:hover,  a.cadastro:visited:hover{
+    text-decoration: none;
+    color: #fc81b2;
+    font-size: 20px;
+}
+
+/*REDEFINIR SENHA*/
+input.email{
+    height: 30px;
+    width: 210px;
+    color:#300b59;
+    border: 2px solid #8b78ad;
+    background-color:transparent;
+}
+
+#email {
+    width:100%;
+    background-color: transparent;
+    position: absolute;
+    align-content: center;
+    height: 250px;
+    font-family: arial;
+    text-align: justify;
+    font-size: 20px;
+    color: #300b59;
+    top:50%;
+    margin-top: -120px;
+    line-height: 30px;
+}
+
+
+/* FOOTER*/
+
+div.footer {
+    position:absolute;
+    bottom: 0;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    font-family: arial;
+    align-content: center;
+    
+    color: black;
+    font-size: 14px;
+}
+
